@@ -1,0 +1,5 @@
+c:\users\cliffs\documents\visual studio 2010\Projects\InParser\InParser\obj\Debug\ResolveAssemblyReference.cache
+c:\users\cliffs\documents\visual studio 2010\Projects\InParser\InParser\bin\Debug\InParser.dll
+c:\users\cliffs\documents\visual studio 2010\Projects\InParser\InParser\bin\Debug\InParser.pdb
+c:\users\cliffs\documents\visual studio 2010\Projects\InParser\InParser\obj\Debug\InParser.dll
+c:\users\cliffs\documents\visual studio 2010\Projects\InParser\InParser\obj\Debug\InParser.pdb
