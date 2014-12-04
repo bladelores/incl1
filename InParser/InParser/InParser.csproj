@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Curve.cs" />
+    <Compile Include="Inclinometry.cs" />
     <Compile Include="Attribute.cs" />
-    <Compile Include="Param.cs" />
+    <Compile Include="InParserException.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

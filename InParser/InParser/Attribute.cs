@@ -1,24 +1,14 @@
-﻿using System.Collections.Generic;
-
-namespace InParser
+﻿namespace InParser
 {
     public class Attribute
     {
-        public List<float> Values;
-        public string Title
-        {
-            get;
-            set;
-        }
-        public string Hint
-        {
-            get;
-            set;
-        }
-        public Attribute(string title)
+        public string Title { get; set; }
+        public string Data { get; set; }
+        public Attribute(string title, string data)
         {
             Title = title;
-            Hint = string.Empty;
+            Data = data;
         }
     }
 }
+
