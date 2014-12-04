@@ -1,6 +1,6 @@
 # inparser
 bin/
-obj/
+obj/ 
 
 # Windows image file caches
 Thumbs.db
