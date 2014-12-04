@@ -4,7 +4,7 @@
 **/bin/Release/
 **/obj/Debug/
 **/obj/x86/Debug/
-**/packages
+**/packages/
 *.suo
 
 # Windows image file caches
