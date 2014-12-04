@@ -1,6 +1,8 @@
 # inparser
 bin/
 obj/ 
+debug/
+x86/
 
 # Windows image file caches
 Thumbs.db
