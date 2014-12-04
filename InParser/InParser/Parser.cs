@@ -42,7 +42,7 @@ namespace InParser
                         if (mAttrNumAndSquare.Success)
                         {
                             Data = new Inclinometry();
-                            Data.VelName = mAttrNumAndSquare.Groups[2].Value;
+                            Data.WellName = mAttrNumAndSquare.Groups[2].Value;
                             Data.OilArea = mAttrNumAndSquare.Groups[4].Value;
                             Data.Attributes = new List<Attribute>();
                             state = State.Attribute;    
