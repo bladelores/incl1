@@ -1,9 +1,0 @@
-c:\users\cliffs\documents\visual studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
-c:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
-c:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
-c:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\InParser.dll
-c:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\InParser.pdb
-c:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
-c:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
-C:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\nunit.framework.dll
-C:\Users\cliffs\Documents\Visual Studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\nunit.framework.xml
