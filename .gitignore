@@ -1,6 +1,7 @@
 # inparser
 bin/debug/
-obj/x86/debug/
+obj/Debug/
+obj/x86/Debug/
 bin/
 obj/ 
 *.dll
