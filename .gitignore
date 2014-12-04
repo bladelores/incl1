@@ -1,6 +1,4 @@
 # inparser
-**/bin/Debug/
-!bin/Debug/*.GIN
 **/bin/Release/
 **/obj/Debug/
 **/obj/x86/Debug/
