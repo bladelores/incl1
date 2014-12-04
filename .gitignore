@@ -3,6 +3,7 @@ bin/debug/
 obj/x86/debug/
 bin/
 obj/ 
+*.dll
 
 # Windows image file caches
 Thumbs.db
