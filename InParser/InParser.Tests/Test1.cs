@@ -16,6 +16,8 @@ namespace InParserTest
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("1.GIN");
             Assert.DoesNotThrow(delegate { a.Parse(sr.BaseStream, Encoding.Default); });
+            if (a.Data.Attributes.Count == 0 || a.Data.Curves.Count == 0) 
+                Assert.Fail();
         }
     }
 }

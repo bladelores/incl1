@@ -15,7 +15,8 @@ namespace InParserTest
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("2.GIN");
-            Assert.Throws<InParserException>(delegate { a.Parse(sr.BaseStream, Encoding.Default); });
+            InParserException ex = Assert.Throws<InParserException>(delegate { a.Parse(sr.BaseStream, Encoding.Default); });
+            if (ex == null) Assert.Fail();
         }
     }
 }
