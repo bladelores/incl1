@@ -17,13 +17,21 @@ namespace InParserTest
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("1.GIN");
             Assert.DoesNotThrow(delegate { a.Parse(sr.BaseStream, Encoding.Default); });
-            if (a == null ||
-                a.Data == null ||
-                a.Data.WellName == null ||
-                a.Data.OilArea == null ||
-                a.Data.Attributes == null || 
-                a.Data.Curves == null) 
-                    Assert.Fail();
+            if (a.Data.WellName == null ||
+                    a.Data.OilArea == null ||
+                    a.Data.Attributes.Count == 0 ||
+                    a.Data.Curves.Count == 0)
+                Assert.Fail();
+            else
+            {
+                foreach (InParser.Attribute attr in a.Data.Attributes)
+                    if (attr.Title == null || attr.Data == null) 
+                        Assert.Fail();
+                foreach (Curve curve in a.Data.Curves)
+                    if (curve.Title == null || curve.Hint == null || curve.Values.Count == 0)
+                        Assert.Fail();
+            }
+
         }
 
         [Test]
