@@ -12,30 +12,21 @@ namespace InParserTest
     public class Test
     {
         [Test]
-        public void Test1()
+        public void TestNoError()
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("1.GIN");
             Assert.DoesNotThrow(delegate { a.Parse(sr.BaseStream, Encoding.Default); });
-            if (a.Data.WellName == null ||
-                    a.Data.OilArea == null ||
-                    a.Data.Attributes.Count == 0 ||
-                    a.Data.Curves.Count == 0)
-                Assert.Fail();
-            else
-            {
-                foreach (InParser.Attribute attr in a.Data.Attributes)
-                    if (attr.Title == null || attr.Data == null) 
-                        Assert.Fail();
-                foreach (Curve curve in a.Data.Curves)
-                    if (curve.Title == null || curve.Hint == null || curve.Values.Count == 0)
-                        Assert.Fail();
-            }
-
+            Assert.AreEqual(a.Data.WellName, "26854");
+            Assert.AreEqual(a.Data.OilArea, "905");
+            Assert.IsTrue(a.Data.Attributes.Count == 7);
+            Assert.AreEqual(a.Data.Attributes[4].Title, "#MAGCORR");
+            Assert.AreEqual(a.Data.Attributes[2].Data, "20.0 1320.0");
+            Assert.IsTrue(a.Data.Curves.Count == 10);
         }
 
         [Test]
-        public void Test2()
+        public void TestError1()
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("2.GIN");
@@ -43,7 +34,7 @@ namespace InParserTest
         }
 
         [Test]
-        public void Test3()
+        public void TestError2()
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("3.GIN");
@@ -51,7 +42,7 @@ namespace InParserTest
         }
 
         [Test]
-        public void Test4()
+        public void TestError3()
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("4.GIN");
@@ -59,7 +50,7 @@ namespace InParserTest
         }
 
         [Test]
-        public void Test5()
+        public void TestError4()
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("5.GIN");
@@ -67,7 +58,7 @@ namespace InParserTest
         }
 
         [Test]
-        public void Test6()
+        public void TestError5()
         {
             InParser.Parser a = new InParser.Parser();
             StreamReader sr = new StreamReader("6.GIN");
