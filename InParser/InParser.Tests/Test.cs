@@ -19,7 +19,7 @@ namespace InParserTest
             Assert.DoesNotThrow(delegate { a.Parse(sr.BaseStream, Encoding.Default); });
             Assert.AreEqual(a.Data.WellName, "26854");
             Assert.AreEqual(a.Data.OilArea, "905");
-            Assert.AreEqual(a.Data.Attributes.Count,7);
+            Assert.AreEqual(a.Data.Attributes.Count,8);
             Assert.AreEqual(a.Data.Attributes[0].Title, "#NAME");
             Assert.AreEqual(a.Data.Attributes[0].Data, "INCL Данные инклинометpии");
             Assert.AreEqual(a.Data.Attributes[1].Title, "#TYPE");
@@ -34,6 +34,8 @@ namespace InParserTest
             Assert.AreEqual(a.Data.Attributes[5].Data, "AOTНГФ~УГРАзнакаевское");
             Assert.AreEqual(a.Data.Attributes[6].Title, "#TOOL");
             Assert.AreEqual(a.Data.Attributes[6].Data, " ");
+            Assert.AreEqual(a.Data.Attributes[7].Title, "#OPER");
+            Assert.AreEqual(a.Data.Attributes[7].Data, "");
             Assert.AreEqual(a.Data.Curves.Count,10);
             Assert.AreEqual(a.Data.Curves[0].Title, "DEPTH");
             Assert.AreEqual(a.Data.Curves[0].Hint, "Глубина");
